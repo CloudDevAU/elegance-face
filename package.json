@@ -1,0 +1,13 @@
+{
+  "fitbit": {
+    "appUUID": "faac4062-d135-4743-8d74-bfcbcaff3c32",
+    "appType": "clockface",
+    "appDisplayName": "Elegance",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ]
+  }
+}

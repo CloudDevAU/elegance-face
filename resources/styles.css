@@ -1,0 +1,36 @@
+.background {
+  viewport-fill: fb-slate-press;
+}
+
+/*#myLabel {
+  font-size: 60;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+40;
+  fill: white;
+}*/
+
+.sec-hand {
+  x: -2;
+  y: -25%-2;
+}
+
+.min-hand {
+  x: -4;
+  y: -25%-4;
+}
+
+.hour-hand {
+  x: -4;
+  y: -15%-4;
+}
+
+.dot {
+  x: -4;
+  y: -4;
+}
+
+.tick-marks {
+}
