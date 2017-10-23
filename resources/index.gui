@@ -1,23 +1,55 @@
 <svg class="background">
   <defs>
+    <section>
+      <symbol id="sec-hand">
+        <line x1="0" y1="0" x2="0" y2="66" stroke-width="2"/>
+      </symbol>
+      <symbol id="min-hand">
+        <line x1="0" y1="0" x2="4" y2="14" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-4" y2="14" stroke-width="2"/>
+        <line x1="4" y1="14" x2="0" y2="70" stroke-width="2"/>
+        <line x1="-4" y1="14" x2="0" y2="70" stroke-width="2"/>
+      </symbol>
+      <symbol id="hour-hand">
+        <line x1="0" y1="0" x2="5" y2="7" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-5" y2="7" stroke-width="2"/>
+        <line x1="5" y1="7" x2="0" y2="50" stroke-width="2"/>
+        <line x1="-5" y1="7" x2="0" y2="50" stroke-width="2"/>
+      </symbol>
+      <symbol id="center-dot">
+        <circle r="4" fill="#F5F5F5"/>
+        <circle r="2" fill="fb-dark-gray"/>
+      </symbol>
+    </section>
     <symbol id="clock-widget" class='clock-widget' type='clock-widget'
-        focusable='false' pointer-events='visible' system-events='all'
-        x='0' y='0' width='100%' height='100%' data-size='16'/>
+        focusable='false' pointer-events='visible' system-events='all' width='234' height='234' data-size='16'/>
   </defs>
-  <image href="bg-sq.png" width="250" height="250" class="analog-watch-background" fill-opacity="1" />
-  <use id="analog-watch-hands" href='#clock-widget'>
-    <g x="0" y="0" transform="translate(50%-49,50%)">
+  
+  
+  <use id="analog-watch-hands" href='#clock-widget' x='8' y='8' >
+    <circle cx="117" cy="117" r="117" fill="fb-white" />
+    <circle cx="117" cy="117" r="115" fill="fb-dark-gray" />
+    <circle cx="117" cy="117" r="105" fill="fb-dark-gray" />
+    <image href="num-rn.png" width="200" height="200" class="numbers" fill-opacity="1" />
+    <image href="bg-r.png" width="230" height="230" class="tick-marks" fill-opacity="1" />
+    <g x="0" y="0" transform="translate(50%,50%)">
       <g id="second-hand">
-        <rect width="4" height="25%" fill="#F5F5F5" class="sec-hand"/>
+        <use href="#sec-hand" class="sec-hand" />
+<!--         <rect width="4" height="25%" fill="#F5F5F5" class="sec-hand"/> -->
+<!--         <image href="sec.png" width="4" height="78" class="sec-hand" /> -->
       </g>
       <g id="minute-hand">
-        <rect width="8" height="25%" fill="#F5F5F5" class="min-hand"/>
+        <use href="#min-hand" class="min-hand" />
+<!--         <image href="min.png" width="8" height="70" class="min-hand" /> -->
+<!--         <rect width="8" height="25%" fill="#F5F5F5" class="min-hand"/> -->
       </g>
       <g id="hour-hand">
-        <rect width="8" height="15%" fill="#F5F5F5" class="hour-hand"/>
+        <use href="#hour-hand" class="hour-hand" />
+<!--         <image href="hour.png" width="8" height="45" class="hour-hand" /> -->
+<!--         <rect width="8" height="15%" fill="#F5F5F5" class="hour-hand"/> -->
       </g>
       <g id="dot">
-        <circle r="8" fill="#F5F5F5" class="dot"/>
+        <use href="#center-dot" class="center-dot" />
       </g>
     </g>
   </use>
